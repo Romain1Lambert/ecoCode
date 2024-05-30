@@ -1,0 +1,16 @@
+{
+  "title": "Unnecessary assignment",
+  "type": "CODE_SMELL",
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "2min"
+  },
+  "tags": [
+    "eco-design",
+    "ecocode",
+    "performance",
+    "bad-practice"
+  ],
+  "defaultSeverity": "Minor"
+}

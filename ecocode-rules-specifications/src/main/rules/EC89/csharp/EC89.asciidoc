@@ -1,0 +1,41 @@
+:!sectids:
+
+Unnecessary assignment
+
+## Why is this an issue ?
+
+If a variable is assigned in an if/else if/esle block with a specific value only to be returned, the memory allocation is unnecessary and the value should be returned instead.
+
+### When can it be ignored ?
+
+The assigned value must be computed.
+
+## Non-compliant examples
+
+[source, cs]
+----
+if (condition)
+{
+    x = 1;
+}
+else
+{
+    x = 2;
+}
+
+return x;
+----
+
+## Compliant examples
+
+[source, cs]
+----
+if (condition)
+{
+    return 1;
+}
+else
+{
+    return 2;
+}
+----
